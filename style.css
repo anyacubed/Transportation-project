@@ -1,0 +1,320 @@
+/* @font-face {
+  font-family: 'Arial-MT';
+  src: url("../assets/fonts/Arial-MT.woff"); 
+ } */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* min-width: 480px;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif; */
+  font-size: 28px;
+  /* text-align: center;
+  background: url("../assets/img/bg.jpg") center/cover, rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  transition: background-image 1s ease-in-out; */
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.header {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color:  #ffd589;
+}
+
+.header div {
+  width: 33%;
+  height: 100%;
+}
+
+.header-nav {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #9D8665;
+}
+
+.header-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-center h3 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.logo {
+  width: 90px;
+  height: 80px;
+}
+
+.header-right {
+  display: flex;
+  justify-content: center;
+}
+
+.header-social-icons {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  padding-left: 160px;
+}
+
+.header-social-phone-numbers {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header-social-item {
+  color: black;
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  min-height: 600px;
+}
+
+h1 {
+  text-align: center;
+  margin: 55px 0;
+}
+
+.main-photo {
+  max-width: 1920px;
+  width: 100%;
+  max-height: 540px;
+  height: 100%;
+}
+
+.company-description {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.covid-notification {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.covid-notification p {
+  text-align: justify;
+  margin: 40px 30px;
+  text-indent: 45px;
+}
+
+.covid-img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.company-info {
+  width: 80%;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.company-info p {
+  text-align: justify;
+  text-indent: 45px;
+}
+
+.salon-images {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.salon-images img {
+  max-width: 500px;
+  max-height: 300px;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  text-align: center;
+  padding: 50px;
+}
+
+.company-service {
+  width: 100%;
+  padding-top: 100px;
+}
+
+h3 {
+  text-align: center;
+  margin: 35px;
+}
+
+.company-service p {
+  text-align: center;
+  text-indent: 45px;
+  margin: 35px 50px;
+  font-size: 22px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding-bottom: 100px;
+}
+
+.services i {
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.service-cell {
+
+}
+
+.parallax {
+  max-width: 1920px;
+  width: 100%;
+  background-image: url(assets/img/on-the-road.jpg);
+  height: 600px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages-container {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.advantages-list {
+  list-style: none;
+  text-align: center;
+}
+
+.contacts {
+  width: 100%;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.contacts p {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.contacts-list {
+  list-style: none;
+}
+
+.contacts-list li {
+  margin-top: 15px;
+  font-size: 36px;
+}
+
+.contacts-list li:last-child {
+  margin-bottom: 35px;
+}
+
+.contacts-item {
+  text-decoration: none;
+  color: black;
+}
+
+.contacts-social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-social-item i {
+  margin: 20px;
+  color: black;
+}
+
+.contacts-social-item i:hover {
+  color: #9D8665;
+}
+
+.footer {
+  width: 100%;
+  height: 160px;
+  display: flex;
+}
+
+.footer div {
+  width: 50%;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-left h3 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.footer-nav {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-nav a:hover {
+  color: #9D8665;
+}
