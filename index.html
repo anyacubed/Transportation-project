@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
-  <title>fox-bus.by</title>
+  <link rel="icon" type="image/ico" href="assets/favicon.ico"/>
+  <title>Пассажирские перевозки (РБ, СНГ, Европа) fox-bus.by</title>
 </head>
+<script type="text/javascript">!function(){var e={"buttons":[{"type":"telegram","token":"+375295574795"},{"type":"instagram","token":"foxbus_"},{"type":"viber","token":"+375295574795"},{"type":"email","token":"foxbus@mail.ru"},{"type":"call","token":"+375295574795"}],"color":"#F24B04","position":"right","bottomSpacing":"","callToActionMessage":"Свяжитесь с нами","displayOn":"everywhere","lang":"ru"},t=document.location.protocol+"//bothelp.io",o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=t+"/widget-folder/widget-page.js",o.onload=function(){new BhWidgetPage.init(e)};var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(o,n)}();</script>
 <body>
   <header class="header container">
     <div class="header-left">
@@ -40,37 +42,49 @@
     <div class="first-page">
       <img class="main-photo" src="assets/img/Mersedes-Bens.jpg" alt="Main image.">
       <h1>Пассажирские перевозки (РБ, СНГ, Европа)</h1>
+      <!-- <a href="https://www.google.com/maps/place/%D0%92%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA/@55.1938981,30.0548122,11z/data=!3m1!4b1!4m5!3m4!1s0x46c573e3fc7c7be7:0x430637d0624afff4!8m2!3d55.1926809!4d30.206359" target="_blank"><i class="fa fa-map-marker"></i>Витебск</a> -->
     </div>
     <div class="company-description">
       <div class="covid-notification">
-        <p>В связи с активным распостранением коронавирусной инфекции напоминаем вам о том, что ношение лицевых масок является <u>обязательным</u> в общественных местах и транспорте.</p>
+        <p>Напоминаем, что, согласно ВОЗ, в связи с активным распостранением коронавирусной инфекции ношение лицевых масок является <u>обязательным</u> в общественных местах и транспорте.</p>
         <img class="covid-img" src="assets/img/coronavirus.jpg" alt="">
       </div>
       <div id="company-info" class="company-info">
         <h2>О нас</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <div class="salon-images">
-          <img src="assets/img/salon-image1.jpg" alt="">
-          <img src="assets/img/salon-image2.jpg" alt="">
-          <img src="assets/img/salon-image3.jpg" alt="">
+        <div class="slider-container">
+          <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+            <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                <i class="fa fa-angle-left fa-3x"></i>
+            </li>
+            <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                <i class="fa fa-angle-right fa-3x"></i>          
+            </li>
+          </ul>
+          <div class="salon-images">
+            <img src="assets/img/salon-image1.jpg" alt="">
+            <img src="assets/img/salon-image2.jpg" alt="">
+            <img src="assets/img/salon-image3.jpg" alt="">
+          </div>
         </div>
+
       </div>
       <div id="company-service" class="company-service">
         <h2>Наши услуги</h2>
         <div class="services">
           <div class="service-cell">
-            <i class="fa fa-car fa-5x"></i>
-            <h3><strong>1 услуга</strong></h3>
-            <p>Современный автопарк.</p>
+            <i class="fa fa-car fa-3x"></i>
+            <h3><strong>Качественный сервис</strong></h3>
+            <p>Современный автопарк позволит Вам действительно насладиться безопасной поездкой.</p>
           </div>
           <div class="service-cell">
-            <i class="fa fa-child fa-5x"></i>
-            <h3><strong>2 услуга</strong></h3>
-            <p>Корпоративы, свадьбы, юбилеи, трансфер и т.д.</p>
+            <i class="fa fa-child fa-3x"></i>
+            <h3><strong>Разнообразие услуг</strong></h3>
+            <p>Трансфер, транспортное обслуживание корпоративов, экскурсий, свадеб, юбилеев и других мероприятий.</p>
           </div>
           <div class="service-cell">
-            <i class="fa fa-check-square fa-5x"></i>
-            <h3><strong>3 услуга</strong></h3>
+            <i class="fa fa-check-square fa-3x"></i>
+            <h3><strong>Выгодные цены</strong></h3>
             <p>Форма оплаты любая.</p>
           </div>
         </div>
@@ -80,16 +94,19 @@
     <div class="advantages-container">
       <h2>Наши преимущества</h2>
       <ul class="advantages-list">
-        <li><i class="fa fa-check-circle"></i></li>
-        <li><i class="fa fa-check-circle"></i></li>
-        <li><i class="fa fa-check-circle"></i></li>
+        <li><i class="fa fa-check-circle"></i>Комфортабельные автобусы.</li>
+        <li><i class="fa fa-check-circle"></i>Вежливое обслуживание.</li>
+        <li><i class="fa fa-check-circle"></i>Возможность комфортного перемещения не только по территории РБ, но и по СНГ и Европе.</li>
+        <li><i class="fa fa-check-circle"></i>Доступные цены. Безналичный и наличный расчет.</li>
+        <li><i class="fa fa-check-circle"></i>Оперативность и мобильность.</li>
+        <li><i class="fa fa-check-circle"></i>Осуществление подачи транспорта заранее во избежание проблем с пробками и других непредвиденных ситуаций.</li>
       </ul>
     </div>
     <div id="contacts" class="contacts">
       <h2>Наши контакты</h2>
       <ul class="contacts-list">
-        <li><a class="contacts-item" href="tel:+375295144788"><strong>+375(29) 514 47 88</strong></a> </li>
         <li><a class="contacts-item" href="tel:+375295574795"><strong>+375(29) 557 47 95</strong></a></li>
+        <li><a class="contacts-item" href="tel:+375295144788"><strong>+375(29) 514 47 88</strong></a> </li>
         <li><a class="contacts-item" href="mailto:foxbus@mail.ru" target="_blank"><strong>foxbus@mail.ru</strong></a></li>
       </ul>
       <p>Мы в социальных сетях:</p>
@@ -98,6 +115,9 @@
         <li><a class="contacts-social-item" href="mailto:foxbus@mail.ru" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
       </ul>
     </div>
+    <button id="scroll-up" class="scroll-up" type="button">
+      <i class="fa fa-arrow-up fa-lg"></i>
+    </button>
   </main>
   <footer class="footer container">
     <div class="footer-left">
