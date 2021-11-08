@@ -97,6 +97,14 @@ a:hover {
   text-decoration: none;
 }
 
+.burger-container {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
+}
+
 .main {
   width: 100%;
 }
@@ -113,11 +121,12 @@ h1 {
   padding-bottom: 5%;
 }
 
-/* .first-page a {
+.first-page a {
   text-decoration: none;
   color: black;
   display: flex;
   justify-content: center;
+  margin-top: 0.3%;
 }
 
 .first-page a:hover {
@@ -126,7 +135,7 @@ h1 {
 
 .first-page i {
   margin-right: 5px;
-} */
+}
 
 .company-description {
   margin: 0 auto;
@@ -141,7 +150,6 @@ h1 {
 .covid-notification p {
   text-align: center;
   margin: 5% 9%;
-  text-indent: 45px;
 }
 
 .covid-img {
@@ -345,8 +353,8 @@ h3 {
 .scroll-up {
   position: fixed;
   cursor: pointer;
-  left: 3%;
-  bottom: 5%;
+  left: 15px;
+  bottom: 3%;
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -355,6 +363,7 @@ h3 {
   color: transparent;
   background-color: rgb(86, 74, 100);
   scroll-behavior: smooth;
+  box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
 }
 
 .scroll-up:hover {
@@ -414,6 +423,7 @@ h3 {
 
   .parallax {
     height: 400px;
+    max-width: 1165px;
   }
 
 }
@@ -469,6 +479,7 @@ h3 {
 
   .parallax {
     height: 350px;
+    max-width: 810px;
   }
 
   .contacts-list li {
@@ -477,5 +488,127 @@ h3 {
 
   .footer-left h3 {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .header {
+    padding: 0 10%;
+    justify-content: space-around;
+    overflow-x: hidden;
+  }
+
+  .header-left {
+    display: none;
+  }
+
+  .header-center {
+    gap: 5%;
+  }
+
+  .logo {
+    width: 60px;
+    height: 50px;
+  }
+
+  .header-center h3 {
+    font-size: 18px;
+  }
+
+  .header-right {
+    width: 60%;
+    font-size: 15px;
+  }
+
+  .burger-container {
+    display: block;
+  }
+
+  .burger-menu {
+    display: none;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burger-menu:active {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+
+  .burger-menu-button {
+    display: block;
+    margin: auto 0;
+    width: 45px;
+    height: 45px;
+    color: rgb(0, 0, 0);
+  }
+
+  .burger-menu-button:hover {
+    cursor: pointer;
+}
+
+  .burger-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .burger-close-button{
+    margin: auto 0;
+    width: 45px;
+    height: 45px;
+    filter: invert(93%) sepia(0%) saturate(6039%) hue-rotate(84deg) brightness(109%) contrast(103%);
+  }
+
+  .nav-burger {
+    left: -100%;
+    position: fixed;
+    width: 100%;
+    flex-direction: column;
+    transition: 0.3s;
+  }
+
+  .nav-burger.active {
+    left: 0;
+  }
+
+  .header-burger-item {
+    margin: 2% 0;
+  }
+
+  .parallax {
+    max-width: 600px;
+  }
+
+  .advantages-list {
+    margin: 0 15%;
+  }
+
+  .advantages-list li {
+    text-align: center;
+  }
+
+  .scroll-up {
+    display: none;
+  }
+
+  .footer div {
+    width: 100%;
+  }
+
+  .footer-left {
+    gap: 5%;
+  }
+
+  .footer-left h3 {
+    font-size: 18px;
+  }
+
+  .footer-right {
+    display: none;
   }
 }
