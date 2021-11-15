@@ -32,39 +32,39 @@ window.addEventListener('scroll', function() {
 
 const burgerMenu = document.querySelector('.burger-menu');
 const burgerMenuButton = document.querySelector('.burger-menu-button');
-const header = document.querySelector('.header');
 const burgerCloseButton = document.querySelector('.burger-close-button');
-const navBurger = document.querySelector('.nav-burger');
+const burgerMenuLink = document.querySelector('.nav-link');
+const burgerMenuLinks = document.querySelectorAll('.nav-link');
+const burgerContainer = document.querySelector(".burger-container");
+const showMenu = document.querySelector(".show-menu");
 
-burgerMenuButton.addEventListener('click', function(event) { 
-  burgerMenu.classList.toggle('burger-menu-active');
-  header.classList.toggle('header__closed');}
-);
+const main = document.querySelector(".main");
+const footer = document.querySelector(".footer");
 
-burgerMenuButton.addEventListener('click', function(event) { 
-  burgerCloseButton.classList.toggle('burger-close-button-active');
-  header.classList.toggle('header__closed');}
-);
-
-// burgerMenu.addEventListener('click', () => {
-//   burgerMenu.classList.toggle('active');
-//   navBurger.classList.toggle('active');
-// })
-
-// document.querySelectorAll(".nav-link").forEach(n => n.addEventListener('click', () => {
-//   burgerMenu.classList.remove('active');
-//   navBurger.classList.remove('active');
-// }))
-
-function toggleBurger() {
-  if (burgerMenuButton.style.display == 'block') {
-    burgerMenuButton.style.display ='none';
-    burgerCloseButton.style.display ='block';
+function toggleMenu() {
+  if (burgerMenu.classList.contains("showMenu")) {
+    burgerMenu.classList.remove("showMenu");
+    main.style.top = '0px';
+    footer.style.top = '0px';
+    burgerCloseButton.style.display = "none";
+    burgerMenuButton.style.display = "block";
   } else {
-    burgerMenuButton.style.display ='block';
-    burgerCloseButton.style.display ='none';
+    burgerMenu.classList.add("showMenu");
+    main.style.top = '100px';
+    footer.style.top = '100px';
+    burgerCloseButton.style.display = "block";
+    burgerMenuButton.style.display = "none";
   }
 }
 
-burgerMenuButton.addEventListener('click', toggleBurger);
-burgerCloseButton.addEventListener('click', toggleBurger);
+burgerMenuLinks.forEach( 
+  function(burgerMenuLink) { 
+    burgerMenuLink.addEventListener("click", toggleMenu);
+  }
+)
+
+burgerContainer.addEventListener("click", toggleMenu);
+
+// document.addEventListener('keydown', function(e) {
+
+// })
